@@ -5,7 +5,7 @@ import { Tasks } from '../api/task.js';
 
 class Task extends React.Component {
 
-	handleClick(){
+ 	handleClick(){
 		let item = this.refs.item.value;
 		Meteor.call('tasks.insert',item);
 		this.refs.item.value = '';
